@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width initial-scale=1.0,  user-scalable=no" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Athiti&amp;subset=thai" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #000000 !important;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        @font-face {
+            font-family: 'DBHelvethaicaMon';
+            src: url(../../../static/lib/font/DBHelvethaicaMonXv3.22.ttf)  format('truetype');
+        }
+
+        * {
+            font-family: 'DBHelvethaicaMon', sans-serif;
+        }
+
+        body
+        {
+            overflow: hidden;
+            width:100%;
+            background-color: transparent;
+        }
+
+        .banner {
+            height: 100%;
+            width: 100%;
+        }
+
+        .bannerArea {
+            display:  flex;
+            flex-direction: column;
+            height: 30%;
+            background-color: rgba(0,0,0,0);
+        }
+
+        .button-goto-container{
+            position : relative;
+        }
+
+        img.button{
+            position : absolute;
+            width : 30%;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%,-170%);
+            transform: translate(-50%,-170%)
+        }
+
+        .button-text-container{
+            position : relative;
+        }
+
+        img.text{
+            position : absolute;
+            width : 25%;
+            left: 75%;
+            top: 50%;
+            -webkit-transform: translate(-10%,-160%);
+            transform: translate(-10%,-160%)
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="bannerArea">
+            <a href="karaokeapp://${.hrefResult}"><img class="banner" src="${.path}" /></a>
+        </div>
+    </div>
+</body>
+
+</html>
